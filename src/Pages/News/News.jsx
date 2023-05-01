@@ -3,6 +3,7 @@ import { Link, useLoaderData } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { FaArrowLeft } from "react-icons/fa";
+import EditorInsigt from "./EditorsInsight/EditorInsigt";
 
 
 const News = () => {
@@ -20,6 +21,9 @@ const News = () => {
           <Link className="text-decoration-none" to={`/category/${category_id}`}><Button className="d-flex align-items-center gap-3 bg-danger border-0 bg-opacity-75"  variant="primary"><FaArrowLeft></FaArrowLeft> <span className="fw-bold">All news in this category</span></Button></Link>
           </Card.Body>
       </Card>
+      <div className="my-5">
+        <EditorInsigt></EditorInsigt>
+      </div>
     </div>
   );
 };
